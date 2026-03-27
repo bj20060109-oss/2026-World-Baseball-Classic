@@ -14,10 +14,10 @@ Each player has two key attributes: Aura Level and Impact Radius. These are repr
 
 A player at position i can exert influence over another player at position j if and only if the following conditions are met:
 
-1.|j - i| <= R_i
+1. |j - i| <= R_i
   player_i must be within the range of player_j's Impact Radius.
 
-2.L_j < L_i
+2. L_j < L_i
   player_i must have a higher Aura Level than player_j's
 
 3.{L_k} < L_i for all k in {k | i+1 <= k <= j-1} or k in {k | j+1 <= k <= i-1\}
